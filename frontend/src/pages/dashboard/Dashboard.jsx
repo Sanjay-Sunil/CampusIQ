@@ -1,8 +1,10 @@
+import Header from '../../components/Header';
+import './Dashboard.css';
+
 function Dashboard() {
 	return (
 		<>
-		<h2>DashBoard
-		</h2>
+			<Header heading="Dashboard" />
 		</>
 	)
 }
