@@ -2,7 +2,7 @@ import './Query.css';
 function Query(){
   return (
     <>
-    <div className="query-section">
+    <div className="query-section element">
       <input type="text" className="query-input" placeholder='what are consequence of od?' />
     </div>
     </>

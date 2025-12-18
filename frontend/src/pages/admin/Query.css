@@ -12,7 +12,7 @@
   flex: 1;
   max-width: 600px;
   font-family: ubuntu;
-  color: #2b2f44;
+  color: #4AF626;
   background-color: #020617;
   padding: 15px 10px;
   outline: none;
@@ -20,12 +20,15 @@
 	border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
 	font-size: 20px;
   font-family: "Ubuntu Sans Mono", monospace;
-	animation: 30s rotate linear infinite;
+	animation: 20s rotate linear infinite;
+  letter-spacing: 1.5px;
   
 
 }
-.query-section .query-input::placeholder{	
+.query-section .query-input::placeholder{
+  color: #94A3B8;
   font-family: "Ubuntu Sans Mono", monospace;
+  letter-spacing: 1.5px;
 }
 @keyframes rotate {
 	to {
@@ -50,3 +53,4 @@
 }
 
 }
+

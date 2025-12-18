@@ -45,13 +45,16 @@
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
   .header{
-    height: 75px;
+    height: 65px;
+  }
+  .header .heading{
+    font-size: 18px;
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 550px) and (min-width: 40px) {
   
   .header .heading {
     font-size: 20px;
