@@ -1,0 +1,125 @@
+.faq-heading{
+  width: 100%;
+  margin-top: 15px;
+  /* background-color: darkblue; */
+  
+  display: flex;
+  justify-content: center;
+  font-family: "Ubuntu Sans Mono", monospace;
+  color: #4AF626;
+  letter-spacing: 2px;
+}
+
+.faq-content{
+  width: 100%;
+  height: fit-content;
+  padding-top: 25px;
+   /* background-color: white;  */
+
+}
+.faq-content-select-box{
+  display: flex;
+  justify-content: center;
+  /* background-color: white; */
+  width: 100%;
+}
+.faq-content-select{
+  background-color: #0F172A;
+  outline: none;
+  text-align: center;
+  font-family: "Ubuntu Sans Mono", monospace;
+  color: #4AF626;
+  letter-spacing: 2px;
+  border: 2.5px solid#1E293B;
+  appearance: none;
+  flex: 1;
+  max-width: 300px;
+  padding: 10px 15px;
+  border-radius: 100rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  
+}
+.faq-content-text-box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0px 10px 0px;
+  /* background-color: grey; */
+}
+.faq-content-text-area{
+  font-family: "Ubuntu Sans Mono", monospace;
+  flex: 1;
+  resize: none;
+  min-height: 180px;
+  max-width: 450px;
+  border-radius: 8px;
+  outline: none;
+  color: #94A3B8;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  border: 2.5px dotted #1E293B;
+  background-color: #0F172A;
+}
+
+.faq-submit{
+  /* background-color: rgb(255, 255, 255); */
+}
+.faq-submit-text{
+  text-align: center;
+  font-size: 13px;
+  font-family: "Ubuntu Sans Mono", monospace;
+  color: #94A3B8;
+  letter-spacing: 2px;
+
+}
+.faq-submit-button-box{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0px;
+  /* background-color: darkblue; */
+}
+.faq-submit-button{
+  flex: 1;
+  max-width: 175px;
+  padding: 10px ;
+  background-color: #0F172A;
+  font-family: "Ubuntu Sans Mono", monospace;
+  color: #4AF626;
+  border-radius: 200px;
+  letter-spacing: 2px;
+  border: 2px solid #1E293B;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.faq-submit-button:hover{
+  background-color: #001234;
+  box-shadow: 0 0 1px #4AF626;
+}
+.faq-content-select:hover{
+  background-color: #010f2a;
+  box-shadow: 0 0 1px #4AF626;
+
+}
+@media screen and (max-width: 700px){
+  .faq-content-select{
+    max-width: 200px;
+  }
+  .faq-content-text-area{
+    max-width: 200px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0F172A;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1E293B;
+  border-radius: 8px;}

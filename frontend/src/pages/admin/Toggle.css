@@ -5,10 +5,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .toggle-section .toggle-box{
   display: flex;
+  border: 2.5px solid #1E293B;
   height: 50px;
   width: 300px;
   background-color: #0F172A;
@@ -26,7 +28,6 @@
   align-items: center;
 }
 .toggle-item.selected-item{
-  
   color: #4AF626;
   background-color: #2563EB;
 }
