@@ -1,5 +1,6 @@
+
 import './Faq.css'
-function Faq({topClass, setTopClass, content, setContent , submitData}) {
+function Faq({topClass, setTopClass, content, setContent , submitData , dataStatus}) {
   function handleClassChange(e){
     setTopClass(e.target.value.toString());
     // console.log(e.target.value.toString());
@@ -35,7 +36,7 @@ function Faq({topClass, setTopClass, content, setContent , submitData}) {
       </div>
 
       <div className="faq-submit">
-        <p className='faq-submit-text'>data is structured by Gemini</p>
+        <p className='faq-submit-text'>{dataStatus}</p>
         <div className="faq-submit-button-box">
           <button className="faq-submit-button" onClick={submitData} disabled={content ? false : true}>Save Data</button>
         </div>
