@@ -1,0 +1,23 @@
+{
+  "name": "campusiq",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Sanjay-Sunil/CampusIQ#readme",
+  "bugs": {
+    "url": "https://github.com/Sanjay-Sunil/CampusIQ/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sanjay-Sunil/CampusIQ.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "vite": "^7.3.0"
+  }
+}
