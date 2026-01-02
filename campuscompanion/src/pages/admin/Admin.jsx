@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Header from '../../components/Header';
+import Header from '../../components/header/Header';
 import './Admin.css';
 import Query from './Query';
 import Toggle from './Toggle';
@@ -10,6 +10,7 @@ import saveStructuredData from '../../utils/saveStructuredData';
 function Admin() {
   const [docMode, setDocMode] = useState(false);
   const [dataStatus, setDataStatus] = useState('data is structured by Gemini');
+  const [dataStatText, setDataStatText] = useState('Save Data');
   const [topClass, setTopClass] = useState('faq');
   const [content, setContent] = useState('');
   function pageInteractions(bool){
@@ -26,14 +27,17 @@ function Admin() {
   async function submitData() {
     pageInteractions(true);
     setDataStatus('Sending data to Gemini for structuring...');
+    setDataStatText('Processing...');
     console.log("Submitting data: ", topClass, content);
 
     const data = await structureData(content);
     setDataStatus('Data structured successfully! Now saving it to firebase DB');
+    setDataStatText('Saving Data...');
     console.log(data);
     
     saveStructuredData(data);
     setDataStatus('Data saved successfully!');
+    setDataStatText('Save Another?');
     pageInteractions(false);
     setContent('');
     
@@ -57,7 +61,7 @@ function Admin() {
         <div className="save-content-area">
           <div className="save-content-box">
 
-            {docMode ? <Doc /> : <Faq topClass={topClass} setTopClass={setTopClass} content={content} setContent={setContent} submitData={submitData} dataStatus={dataStatus} />}
+            {docMode ? <Doc /> : <Faq topClass={topClass} setTopClass={setTopClass} content={content} setContent={setContent} submitData={submitData} dataStatus={dataStatus} dataStatText={dataStatText}  />}
           </div>
         </div>
 

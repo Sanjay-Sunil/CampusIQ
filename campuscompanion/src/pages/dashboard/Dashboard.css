@@ -1,0 +1,15 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+}
+
+.page{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.page .page-body{
+  height: 100%;
+  width: 100%;
+}

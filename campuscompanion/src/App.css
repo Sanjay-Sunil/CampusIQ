@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
 .unselectable {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -5,3 +7,14 @@
   user-select: none;
   -webkit-touch-callout: none;
 }   
+
+:root{
+  --primary-color:#18181b;
+  --secondary-color: #27272a;
+  --t-color: #3f3f46;
+  --f-color: #52525b;
+
+  --font-light: #fafafa;
+  --font-grey: #a1a1aa;
+  
+}
