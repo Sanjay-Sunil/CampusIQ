@@ -7,3 +7,118 @@
   height: 100%;
   width: 100%;
 }
+
+.response {
+  color: whitesmoke;
+}
+.chat{
+  width: 100%;
+  /* background-color: darkblue; */
+  
+  width: calc(100% - 70px);
+  margin-left: 70px;
+  height: calc(100% - 62.5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chat-history-container{
+  width: 100%;
+  /* background-color: black; */
+  overflow-y: auto;
+  height: 10000px;
+  margin-top: 62.5px;
+}
+.chat-input-section {
+  position: fixed;
+  bottom: 20px;
+  width: 60%;
+  max-width: 800px;
+  height: fit-content;
+  background-color: var(--primary-color);
+  
+}
+
+.chat-input-suggestion-bar{
+
+  width: 100%;
+  /* background-color: bisque; */
+  margin-top: 10px;
+
+  margin-bottom: 10px;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+.chat .suggestion-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--font-grey);
+  font-family: "Ubuntu Sans Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 2.5px 10px;
+  margin: 2.5px 5px;
+  background-color: var(--secondary-color);
+  border-radius: 500rem;
+}
+
+
+.chat-input-input-box{
+
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 2px solid var(--f-color);
+}
+.chat-input-query{
+  height: 20px;
+  border: none;
+  flex: 1;
+  background-color: transparent;
+  padding: 10px 20px;
+  color: var(--font-grey);
+  font-family: "Ubuntu Sans Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-size: 16px;
+  font-style: normal;
+  outline: none;
+}
+.chat-input-icons{
+  min-width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+.attachment-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex: 1;
+}
+.chat-input-send-query-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 500rem;
+  outline: none;
+  width: 25px;
+  
+  padding: 5px 0px;
+}
+.chat-input-send-query-button-active{
+  background-color: #172554;
+}
