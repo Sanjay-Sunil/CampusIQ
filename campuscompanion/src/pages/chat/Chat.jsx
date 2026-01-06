@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Header from '../../components/header/Header';
 import './Chat.css';
 import { getData } from '../../utils/getData';
@@ -6,6 +6,8 @@ import getResponse from '../../utils/getResponse';
 import Sidebar from '../../components/sidebar/Sidebar';
 
 function Chat() {
+	const [chatHistory, setChatHistory] = useState([]);
+
 	const [query, setQuery] = useState('');
 	const [response, setResponse] = useState('');
 	
@@ -18,7 +20,9 @@ function Chat() {
 
 
 	}
-
+	useEffect(() => {
+		
+	}, []);
 	return (
 		<>
 
@@ -30,7 +34,23 @@ function Chat() {
 					<div className="chat">
 						<div className="chat-history-container">
 							<div className="chat-item">
-								
+								<div className="chat-item-header-bar">
+										<div className="chat-item-heading-text">
+
+											Chat with CampusIQ
+
+										</div>
+										<div
+										className="chat-item-heading-action-buttons">
+											{/* To be implemented later */}
+										</div>
+								</div>
+								<div className="chat-item-content">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde at reiciendis cupiditate, laborum officia iure, fuga magnam et perspiciatis corporis aut atque consequuntur maxime optio quidem deleniti numquam consectetur aliquid facilis culpa alias doloribus. Voluptatem nihil sit incidunt laborum velit dolorem unde, labore ab delectus et quaerat corporis maiores quasi accusantium alias facere veniam! Neque natus inventore soluta tempore, nemo expedita similique repellendus voluptatibus optio dolore mollitia corporis exercitationem praesentium quaerat at error aperiam consequatur quam porro repudiandae voluptas itaque adipisci eveniet alias. Vel suscipit id quisquam consequatur ea! Dolore eos vero provident unde. Ex soluta voluptatem minus dicta quam!
+								</div>
+								<div className="chat-item-footer-bar">
+									{/* To be implemented later */}
+								</div>
 							</div>
 						</div>
 						<div className="chat-input-section">
