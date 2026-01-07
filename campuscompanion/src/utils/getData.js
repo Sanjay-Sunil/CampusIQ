@@ -5,7 +5,7 @@ export async function getData(){
   const snapshot = await get(child(dbRef, 'data'));
   if(snapshot.exists()){
     const data = snapshot.val();
-    console.log(data);
+    // console.log(data);
     return data;
   }
 }
