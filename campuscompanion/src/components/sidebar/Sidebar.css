@@ -95,3 +95,27 @@
   background-color: transparent;
 
 }
+
+
+
+/* Hide Link arrow/pseudo-element */
+.no-icon-link::after,
+.no-icon-link::before {
+  display: none !important;
+}
+
+/* Or target React Router Link specifically */
+a[role="link"]::after,
+.router-link::after {
+  content: none !important;
+}
+
+/* Global Link icon removal */
+.Link, 
+a[href] {
+  text-decoration: none;
+}
+
+.Link::after {
+  display: none;
+}

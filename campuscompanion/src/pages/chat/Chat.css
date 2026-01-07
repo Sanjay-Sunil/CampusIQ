@@ -26,7 +26,7 @@
   width: 100%;
   /* background-color: black; */
   overflow-y: auto;
-  height: 10000px;
+  height: fit-content;
   margin-top: 62.5px;
 }
 .chat-input-section {
