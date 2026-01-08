@@ -14,12 +14,16 @@ function Chat() {
 	const [response, setResponse] = useState('');
 
 	async function sendQuery() {
-		const res = await getResponse(data, query)
+		const queryText = query;
+		setQuery('Loading......');
+		document.querySelector('.chat-input-send-query-button').disabled = true;
+		const res = await getResponse(data, queryText);
 		setResponse(res);
 		setUserChatHistory('2025BCD0007', query, res);
 		console.log(chatHistory);
 		await fetchChatHistory();
 		setQuery('');
+		document.querySelector('.chat-input-send-query-button').disabled = false;
 		
 	}
 

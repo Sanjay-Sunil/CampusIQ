@@ -115,13 +115,17 @@
   border-radius: 500rem;
   outline: none;
   width: 25px;
-  
+  background-color: var(--secondary-color);
+  margin-right: 7.5px;
   padding: 5px 0px;
 }
+
 .chat-input-send-query-button-active{
   background-color: #172554;
 }
-
+.chat-input-send-query-button-active:hover{
+  background-color: #1e316d;
+}
 .chat .chat-item{
   background-color: var(--secondary-color);
   min-height: 150px;
