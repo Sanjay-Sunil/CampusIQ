@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import './Sidebar.css'
 import { Link } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 function Sidebar() {
-
+  const navigate = useNavigate();
   const [dashboardMode, setDashboardMode] = useState(true);
 
   const [chatMode, setChatMode] = useState(false);
@@ -18,15 +19,21 @@ function Sidebar() {
 
     if (mode === 'dashboard') {
       setDashboardMode(true);
+      
+      navigate('/dashboard');
     }
     else if (mode === 'chat') {
       setChatMode(true);
+
+      navigate('/chat');
     }
     else if (mode === 'archive') {
       setArchiveMode(true);
+      // navigate('/');
     }
     else if (mode === 'settings') {
       setSettingsMode(true);
+      // navigate('/settings');
     }
 
   }
@@ -39,7 +46,6 @@ function Sidebar() {
           <div className="temp-icon"></div>
         </div>
         <div className="sidebar-action-buttons">
-          <a href="/dashboard">
             <div className={dashboardMode ? "sidebar-action-button-active sidebar-action-button" : "sidebar-action-button"}
               onClick={() => changeModeTo('dashboard')}>
               {
@@ -52,19 +58,17 @@ function Sidebar() {
 
             </div>
           
-        </a>
           <div className={chatMode ? "sidebar-action-button-active sidebar-action-button" : "sidebar-action-button"}
             onClick={() => changeModeTo('chat')}>
-            <a href="/chat" 
-              className="no-icon-link"
-              >
+
+
               {
                 chatMode ?
                   <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#3f3f46"><path d="M480-840q74.67 0 140.17 28.17 65.5 28.16 114.5 77.16t77.16 114.5Q840-554.67 840-480q0 74.67-28.17 140.17-28.16 65.5-77.16 114.5t-114.5 77.16Q554.67-120 480-120q-46.33 0-91.67-10-45.33-10-82.66-35l49-49q23.66 14 57.83 20.67 34.17 6.66 67.5 6.66 123.33 0 208.33-85 85-85 85-208.33 0-123.33-85-208.33-85-85-208.33-85-123.33 0-208.33 85-85 85-85 208.33 0 34 6.33 64.17 6.33 30.16 19.67 61.16l-50 50q-19.34-33.33-31-78.83Q120-429 120-480q0-74.67 28.17-140.17 28.16-65.5 77.16-114.5t114.5-77.16Q405.33-840 480-840Zm50 519.33v-162L167.33-120 120-167.33 482.67-530h-162v-66.67h276v276H530Z" /></svg>
                   : <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#27272a"><path d="M480-840q74.67 0 140.17 28.17 65.5 28.16 114.5 77.16t77.16 114.5Q840-554.67 840-480q0 74.67-28.17 140.17-28.16 65.5-77.16 114.5t-114.5 77.16Q554.67-120 480-120q-46.33 0-91.67-10-45.33-10-82.66-35l49-49q23.66 14 57.83 20.67 34.17 6.66 67.5 6.66 123.33 0 208.33-85 85-85 85-208.33 0-123.33-85-208.33-85-85-208.33-85-123.33 0-208.33 85-85 85-85 208.33 0 34 6.33 64.17 6.33 30.16 19.67 61.16l-50 50q-19.34-33.33-31-78.83Q120-429 120-480q0-74.67 28.17-140.17 28.16-65.5 77.16-114.5t114.5-77.16Q405.33-840 480-840Zm50 519.33v-162L167.33-120 120-167.33 482.67-530h-162v-66.67h276v276H530Z" /></svg>
 
               }
-            </a>
+
           </div>
 
           <div className={archiveMode ? "sidebar-action-button-active sidebar-action-button" : "sidebar-action-button"}

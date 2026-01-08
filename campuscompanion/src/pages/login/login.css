@@ -1,9 +1,11 @@
-* {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-.body-login {
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.body-login{
+  
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
   margin: 0;
   height: 100vh;
   background: #18181b;
@@ -21,8 +23,8 @@
   background: #232529;
   width: 380px;
   padding: 35px 30px;
-  border-radius: 25px;
-  color: #fff;
+  border-radius: 12px;
+  color: var(--font-light);
 }
 
 label {
@@ -31,21 +33,24 @@ label {
   font-weight: 600;
 }
 
-input {
+.body-login input {
+  
   width: 100%;
   padding: 12px 15px;
   border-radius: 25px;
   border: none;
   margin-bottom: 25px;
   outline: none;
+  color: var(--f-light);
+  background-color: var(--t-color);
 }
 
-.submit-btn {
+.login-btn {
   width: 160px;
   padding: 10px;
-  background: #004aad;
-  color: #fff;
-  border: none;
+  border: 1px solid var(--f-light);
+  background-color: transparent;
+  color: var(--font-light);
   border-radius: 20px;
   display: block;
   margin: 0 auto 25px;
@@ -107,13 +112,13 @@ input {
 
 /* ---------- Guest mode styles ---------- */
 
-body.guest-mode .login-card *:not(.guest) {
+.body-login .guest-mode .login-card *:not(.guest) {
   opacity: 0.35;
   pointer-events: none;
   filter: grayscale(100%);
 }
 
-body.guest-mode .guest {
+.body-login .guest-mode .guest {
   opacity: 1 !important;
   pointer-events: auto !important;
   filter: none !important;
@@ -136,7 +141,7 @@ body.guest-mode .guest {
   z-index: 0;
 }
 
-body.guest-mode .social-btn.guest::before {
+.body-login .guest-mode .social-btn.guest::before {
   left: 0;
 }
 
@@ -147,6 +152,20 @@ body.guest-mode .social-btn.guest::before {
   color: #000;
 }
 
-body.guest-mode .social-btn.guest {
+.body-login .guest-mode .social-btn.guest {
   box-shadow: 0 0 15px rgba(0, 114, 255, 0.7);
+}
+
+.body-login button{
+  background-color: transparent;
+  border: 1px solid var(--f-color);
+}
+
+.social-btn.guest{
+  background-color: #0284c7;
+  color: var(--f-light);
+  text-decoration: none;
+}
+.body-login a {
+  text-decoration: none;
 }

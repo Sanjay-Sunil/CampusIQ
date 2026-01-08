@@ -12,8 +12,8 @@ function Dashboard() {
 
           <div className="dashboard-container">
             <div className="student-header">
-              <h1 className="student-name">Sanjay S</h1>
-              <p className="student-batch">BATCH-2025 · BCD · 0007</p>
+              <h1 className="student-name">John Doe</h1>
+              <p className="student-batch">BATCH-2025 · BXX · 000X</p>
             </div>
 
             <div className="dashboard-cards">
@@ -57,11 +57,11 @@ function Dashboard() {
                 </div>
                 <div className="performance-stat">
                   <p className="stat-label">CGPA:</p>
-                  <p className="stat-value">8.42</p>
+                  <p className="stat-value">9.09</p>
                 </div>
                 <div className="performance-stat">
                   <p className="stat-label">Attendance:</p>
-                  <p className="stat-value">92%</p>
+                  <p className="stat-value">96%</p>
                 </div>
               </div>
             </div>
@@ -70,7 +70,7 @@ function Dashboard() {
               <div className="event-card">
                 <div className="event-header">
                   <span className="event-icon">📅</span>
-                  <h3 className="event-title">Upcoming Event</h3>
+                  <h3 className="event-title">Upcoming Event - #HappeningToday</h3>
                 </div>
                 <h2 className="event-name">AI Workshop – Gemini API Integration</h2>
                 <p className="event-description">Hands-on MVP demo workshop with real campus use-cases</p>

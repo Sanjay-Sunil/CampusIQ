@@ -119,3 +119,8 @@ a[href] {
 .Link::after {
   display: none;
 }
+
+a {
+  text-decoration: none;   
+  color: inherit;           
+}

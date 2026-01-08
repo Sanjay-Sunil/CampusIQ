@@ -77,7 +77,7 @@ function Chat() {
 								</div>
 							</div>}
 
-							{chatHistory.map((chat, index) => {
+							{chatHistory.map((chat) => {
 								return (
 									<>
 																<div className="chat-item">
@@ -92,9 +92,12 @@ function Chat() {
 										{/* To be implemented later */}
 									</div>
 								</div>
+								
 								<div className="chat-item-content"
 									dangerouslySetInnerHTML={{ __html: chat.answer || 'Gemini is cooking......'}}>
+
 								</div>
+
 								<div className="chat-item-footer-bar">
 									{/* To be implemented later */}
 								</div>
@@ -109,12 +112,13 @@ function Chat() {
 							<div className="chat-input-suggestion-bar">
 								{/* To be tailored according to user chat history */}
 								{
-									query ? null : <>
-										<div className="unselectable suggestion-item">Lorem</div>
-										<div className="unselectable suggestion-item">ipsum dolor</div>
-										<div className="unselectable suggestion-item">adipisicing</div>
-										<div className="unselectable suggestion-item">aut officiis quisquam</div>
-										<div className="unselectable suggestion-item">Lorem</div>
+									(query || (chatHistory.length)>0 ) ? null : <>
+										<div className="unselectable suggestion-item">classes </div>
+										<div className="unselectable suggestion-item">schedule</div>
+										<div className="unselectable suggestion-item">pending work</div>
+										<div className="unselectable suggestion-item">exams</div>
+										<div className="unselectable suggestion-item">FA room</div>
+
 									</>
 								}
 

@@ -12,8 +12,8 @@ export default function Login() {
           <label>Password :</label>
           <input type="password" placeholder="" />
 
-          <button type="submit" className="submit-btn">
-            SUBMIT
+          <button type="submit" className="login-btn">
+            Login
           </button>
 
           <div className="divider">
@@ -34,7 +34,7 @@ export default function Login() {
 
           <a href="/admin" className="admin-link">
             
-            Log in as ADMIN
+            Log in as admin
           </a>
         </form>
       </div>
