@@ -20,7 +20,7 @@ function Chat() {
 		const res = await getResponse(data, queryText);
 		setResponse(res);
 		setUserChatHistory('2025BCD0007', query, res);
-		console.log(chatHistory);
+		// console.log(chatHistory);
 		await fetchChatHistory();
 		setQuery('');
 		document.querySelector('.chat-input-send-query-button').disabled = false;
@@ -35,7 +35,7 @@ function Chat() {
 	async function fetchChatHistory() {
 		getUserChatHistory('2025BCD0007').then((history) => {
 			setChatHistory(history);
-			console.log(history);
+			// console.log(history);
 			
 		});
 		

@@ -7,11 +7,13 @@ export default function Login() {
       <div className="login-card">
         <form>
           <label>UserName :</label>
+          <div className="input-container">
           <input type="text" placeholder="" />
-
-          <label>Password :</label>
+          </div>
+          <label>Password :</label> 
+          <div className="input-container">
           <input type="password" placeholder="" />
-
+          </div>
           <button type="submit" className="login-btn">
             Login
           </button>

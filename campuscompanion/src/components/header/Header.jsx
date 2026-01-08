@@ -4,7 +4,7 @@ function Header(){
     <>  
     <div className="header">
       <div className="header-name-box">
-        <p className="logo-name"> Caai
+        <p className="logo-name"> CaaI
         </p>
       </div>
       <div className="header-page-name-box"></div>

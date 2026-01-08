@@ -16,7 +16,12 @@
 
 .container {
   background: transparent;
+  width: 80%;
+  max-width: 600px;
   padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-card {
@@ -31,13 +36,14 @@ label {
   display: block;
   margin-bottom: 8px;
   font-weight: 600;
+
 }
 
 .body-login input {
   
   width: 100%;
   padding: 12px 15px;
-  border-radius: 25px;
+  border-radius: 8px;
   border: none;
   margin-bottom: 25px;
   outline: none;
@@ -84,7 +90,7 @@ label {
   margin-bottom: 15px;
   border-radius: 25px;
   border: none;
-  background: #fff;
+  color: var(--f-grey);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,6 +100,7 @@ label {
 }
 
 .social-btn .icon {
+  color: #fafafa;
   font-size: 18px;
 }
 
@@ -168,4 +175,11 @@ label {
 }
 .body-login a {
   text-decoration: none;
+}
+
+.body-login .input-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

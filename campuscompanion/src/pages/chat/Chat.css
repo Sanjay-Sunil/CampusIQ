@@ -32,7 +32,7 @@
 .chat-input-section {
   position: fixed;
   bottom: 20px;
-  width: 60%;
+  width: 75%;
   max-width: 800px;
   height: fit-content;
   
@@ -76,6 +76,8 @@
   background-color: transparent;
   border-radius: 8px;
   border: 2px solid var(--f-color);
+  /* min-width: 300px; */
+  padding: 0px 20px;
 }
 .chat-input-query{
   height: 20px;
@@ -116,7 +118,7 @@
   outline: none;
   width: 25px;
   background-color: var(--secondary-color);
-  margin-right: 7.5px;
+  /* margin-right: 7.5px; */
   padding: 5px 0px;
 }
 
@@ -160,12 +162,27 @@
 
 
 }
+@media screen and (max-width: 400px){
+  .attachment-icon{
+    display: none;
+  }
+  .chat-input-send-query-button{
+    margin-right: 5px;
+  }
+  .chat-input-input-box{
+    padding: 0;
+  }
+  .chat-item-content{
+    line-height: 1;
+    padding: 25px 5px;
+    font-size: 12px;
+  }
+}
 .chat-item-heading-text{
   flex: 3;
   height: fit-content;
   flex-wrap: nowrap;
   display: flex;
-  
   align-items: start;
   color: var(--f-color);
   font-family: "Ubuntu Sans Mono", monospace;
